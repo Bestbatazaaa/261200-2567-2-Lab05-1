@@ -1,18 +1,17 @@
 import java.time.LocalDate;
-import java.util.Locale;
 
 public class User {
-    private String name;
-    private LocalDate dob;
+    protected String name;
+    protected LocalDate dob;
 
-  public void User(){
+  protected User(){
       this.name = "";
       this.dob = LocalDate.now();
   }
 
-    public User (String name, LocalDate dob){
+    public User (String name, int year, int month, int date){
         this.name = name;
-        this.dob = dob;
+        this.dob = LocalDate.of(year,month,date);
     }
     public void displayinfo(){
         System.out.println("name: " + name);
@@ -20,6 +19,9 @@ public class User {
     }
 
 }
+
+
+
 
 
 

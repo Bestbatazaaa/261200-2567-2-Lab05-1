@@ -14,9 +14,11 @@ public class Admin extends User{
     }
 
     public void displayinfo(boolean full) {
-        super.displayinfo();
         if(full == true) {
+            super.displayinfo();
             System.out.println("Role: " + role);
+        }else if(full == false){
+            System.out.println("name: " + name);
         }
     }
 

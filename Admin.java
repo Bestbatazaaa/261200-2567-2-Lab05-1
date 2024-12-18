@@ -9,7 +9,7 @@ public class Admin extends User{
     }
 
     public void displayinfo(boolean full) {
-        super.displayinfo(); // Call the parent class displayinfo
+        super.displayinfo(); 
         if(full == true) {
             System.out.println("Role: " + role);
         }
